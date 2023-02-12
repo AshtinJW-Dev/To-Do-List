@@ -138,4 +138,6 @@ function clearElement(element) {
   }
 }
 
+var images = ['image-1.jpg', 'image-2.jpeg', 'image-3.jpeg', 'image-4.jpeg', 'image-5.jpeg'];
+document.getElementsByClassName('mainview')[0].style.backgroundImage = 'url(/img/ChecklistBackground/' + (images[Math.floor(Math.random() * images.length)]) + ')';
 render()
